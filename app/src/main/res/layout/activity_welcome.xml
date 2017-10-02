@@ -20,8 +20,8 @@
 
     <ImageView
         android:id="@+id/image_logo"
-        android:layout_width="88dp"
-        android:layout_height="29dp"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
@@ -35,14 +35,14 @@
     <TextView
         android:id="@+id/text_all_in"
         android:layout_width="wrap_content"
-        android:layout_height="57dp"
+        android:layout_height="67dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="80dp"
         android:fontFamily="@font/montserrat"
         android:text="@string/go_all_in"
         android:textColor="@color/colorAccent"
-        android:textSize="46sp"
+        android:textSize="55sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_logo" />
@@ -54,7 +54,7 @@
         android:fontFamily="@font/montserrat"
         android:text="@string/on_going_all_out"
         android:textColor="@color/colorAccent"
-        android:textSize="21sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/text_all_in"
         app:layout_constraintStart_toStartOf="@+id/text_all_in"
@@ -62,7 +62,7 @@
 
     <TextView
         android:id="@+id/text_welcome_desc"
-        android:layout_width="260dp"
+        android:layout_width="295dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
@@ -72,7 +72,7 @@
         android:text="@string/welcome_desc"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
-        android:textSize="14sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_all_out" />
