@@ -1,4 +1,4 @@
-package com.alexandercasal.devslopes.swoosh
+package com.alexandercasal.devslopes.swoosh.controller
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

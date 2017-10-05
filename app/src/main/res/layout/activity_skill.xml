@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.alexandercasal.devslopes.swoosh.SkillActivity">
+    tools:context="com.alexandercasal.devslopes.swoosh.controller.SkillActivity">
 
     <ImageView
         android:id="@+id/image_background"
@@ -65,6 +65,7 @@
             android:layout_marginEnd="16dp"
             android:layout_weight="1"
             android:background="@drawable/btn_transparent_toggle"
+            android:onClick="onSelectBeginner"
             android:text="@string/beginner"
             android:textColor="@color/colorAccent"
             android:textOff="@string/beginner"
@@ -77,6 +78,7 @@
             android:layout_marginStart="16dp"
             android:layout_weight="1"
             android:background="@drawable/btn_transparent_toggle"
+            android:onClick="onSelectBaller"
             android:text="@string/baller"
             android:textColor="@color/colorAccent"
             android:textOff="@string/baller"
@@ -91,6 +93,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:background="@drawable/btn_transparent_with_solid_border"
+        android:onClick="onClickFinish"
         android:text="@string/finish"
         android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="@+id/image_background"
