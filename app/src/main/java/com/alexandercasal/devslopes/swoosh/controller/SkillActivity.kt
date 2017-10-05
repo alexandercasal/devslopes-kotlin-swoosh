@@ -20,6 +20,18 @@ class SkillActivity : BaseActivity() {
         mPlayer = intent.getParcelableExtra(EXTRA_PLAYER)
     }
 
+    override fun onSaveInstanceState(outState: Bundle?) {
+        outState?.putParcelable(EXTRA_PLAYER, mPlayer)
+        super.onSaveInstanceState(outState)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+        super.onRestoreInstanceState(savedInstanceState)
+        if (savedInstanceState != null) {
+            mPlayer = savedInstanceState.getParcelable(EXTRA_PLAYER)
+        }
+    }
+
     fun onSelectBeginner(view: View) {
         toggle_baller.isChecked = false
         mPlayer.skill = "Beginner"

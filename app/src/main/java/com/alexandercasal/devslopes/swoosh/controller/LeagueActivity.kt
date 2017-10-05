@@ -18,6 +18,19 @@ class LeagueActivity : BaseActivity() {
         setContentView(R.layout.activity_league)
     }
 
+    override fun onSaveInstanceState(outState: Bundle?) {
+        outState?.putParcelable(EXTRA_PLAYER, mPlayer)
+
+        super.onSaveInstanceState(outState)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+        super.onRestoreInstanceState(savedInstanceState)
+        if (savedInstanceState != null) {
+            mPlayer = savedInstanceState.getParcelable(EXTRA_PLAYER)
+        }
+    }
+
     fun leagueNextClicked(view: View) {
         if (toggle_mens.isChecked || toggle_womens.isChecked || toggle_coed.isChecked) {
             val skillActivity = Intent(this, SkillActivity::class.java)
